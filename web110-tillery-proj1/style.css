@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-image: url('bg-stripes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    text-align: center;
+}
+
+.brand-header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #cccccc;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #7b2cbf;
+}
+
+input::placeholder {
+    color: #aaaaaa;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #7b2cbf;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: background-color 0.2s ease;
+}
+
+.register-btn:hover {
+    background-color: #9d4edd;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .logo {
+        max-width: 180px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
